@@ -1357,3 +1357,190 @@ blockquote::after {
   padding-bottom: 20px;
   line-height: 1.2;
 }
+.certificate {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.certificate__wrap {
+  position: relative;
+}
+.certificate__slide {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+  width: 260px;
+  height: 370px;
+  position: relative;
+}
+.certificate__slide a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px #e2e2e2;
+          box-shadow: 0px 0px 10px 0px #e2e2e2;
+}
+.certificate__slide::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icons/zoom-in.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.certificate__prev,
+.certificate__next {
+  top: 50%;
+}
+.review {
+  position: relative;
+  z-index: 0;
+  padding-top: 80px;
+  padding-bottom: 135px;
+  background-image: url(../img/images/img-8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.review::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(14, 16, 24, 0.85);
+}
+.review .title {
+  position: relative;
+  color: #fff;
+  z-index: 5;
+}
+.review__wrap {
+  position: relative;
+}
+.review__slider {
+  z-index: 5;
+  margin-top: 60px;
+}
+.review__slide {
+  width: 555px;
+  padding: 25px 30px;
+  padding-bottom: 15px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.review__pagination {
+  bottom: -45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.review__pagination .swiper-pagination-bullet {
+  opacity: 1;
+  outline: none;
+  width: 25px;
+  height: 5px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: #fff;
+  border-radius: 0;
+}
+.review__pagination .swiper-pagination-bullet-active {
+  background-color: #00a0ea;
+}
+.review__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.review__img-wrap {
+  width: 210px;
+  height: 130px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.review__img-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-left: 10px solid #ebeced;
+  border-top: 10px solid #ebeced;
+}
+.review__img-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-bottom: 10px solid #ebeced;
+  border-right: 10px solid #ebeced;
+}
+.review__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #00a0ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.review__img img {
+  display: block;
+}
+.review__person {
+  width: calc(100% - 235px);
+}
+.review__name {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.review__position {
+  margin: 0;
+  font-size: 14px;
+}
+.review__company {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
