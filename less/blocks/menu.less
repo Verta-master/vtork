@@ -1,0 +1,29 @@
+.menu__btn {
+  display: none;
+}
+
+.menu__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__item {
+  margin-left: 12px;
+  margin-right: 12px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.menu__link {
+  .transition();
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: @blue;
+    .transition();
+  }
+}

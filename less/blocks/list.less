@@ -1,0 +1,20 @@
+.list {
+  .reset();
+  list-style: none;
+  max-width: 555px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  
+  li {
+    position: relative;
+    padding-left: 20px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

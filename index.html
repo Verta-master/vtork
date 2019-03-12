@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Title</title>
+  <title>Пневмопривод</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,400i,500&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
@@ -56,9 +56,8 @@
     
     <section class="pneumo">
       <div class="wrapper">
-        <figure class="pneumo__img">
+        <div class="pneumo__img">
           <img src="img/images/img-3.png" alt="Пневмопривод реечный VT">
-          <span class="pneumo__comment">Щелкните по плюсу для получения подробной информации</span>
           <ul class="pneumo__list">
             <li class="pneumo__item">
               <button type="button" class="pneumo__btn">+</button>
@@ -133,7 +132,8 @@
               </div>
             </li>
           </ul>
-        </figure>
+        </div>
+        <span class="pneumo__comment">Щелкните по плюсу для получения подробной информации</span>
         
         <ul class="list">
           <li>Высокая производительность и надежность.</li>
@@ -668,6 +668,27 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 30,
+    });
+  </script>
+  
+  <!-- Image hidden drops -->
+  <script>
+    $('.pneumo__btn').click(function(e) {
+      e.stopPropagation();
+      $(this).next().slideToggle();
+      $(this).parent().toggleClass('pneumo__item--z');
+      $('.pneumo__btn').not(this).next().stop(true,true).slideUp();
+      $('.pneumo__btn').not(this).parent().removeClass('pneumo__item--z');
+    });
+    $('body').click(function() {
+      $('.pneumo__btn').next().stop(true,true).slideUp();
+      $('.pneumo__btn').parent().removeClass('pneumo__item--z');
+    });
+    $('body').keydown(function(e) {
+      if (e.keyCode == 27) {
+        $('.pneumo__btn').next().stop(true,true).slideUp();
+        $('.pneumo__btn').parent().removeClass('pneumo__item--z');
+      }
     });
   </script>
 </body>

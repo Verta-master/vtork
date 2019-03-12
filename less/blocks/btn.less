@@ -1,0 +1,24 @@
+.btn {
+  width: 200px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: @blue;
+  border-radius: 20px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: @blue-dark;
+    .transition();
+  }
+}
