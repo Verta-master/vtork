@@ -1,0 +1,62 @@
+.benefits {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.benefits__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.benefits__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  p {
+    width: ~"calc(100% - 100px)";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+.benefits__icon {
+  width: 85px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8f8;
+}
+
+.benefits__item {
+  margin-bottom: 30px;
+  
+  &:first-child {
+    width: 360px;
+  }
+  &:nth-child(2) {
+    width: 750px;
+  }
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6), {
+    width: 270px;
+  }
+  &:nth-child(7) {
+    width: 655px;
+  }
+  &:nth-child(8) {
+    width: 460px;
+  }
+  &:nth-child(9),
+  &:nth-child(10) {
+    width: 555px;
+  }
+}

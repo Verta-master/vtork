@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 55px;
 }
 
 .company__img {
@@ -58,5 +59,51 @@ blockquote {
   &::after {
     bottom: -40px;
     background-image: url(../img/icons/quote.svg);
+  }
+}
+
+.company__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.company__text {
+  width: 48%;
+}
+
+.company__img {
+  width: 48%;
+  min-height: 410px;
+  position: relative;
+  text-align: right;
+  
+  img:nth-child(2) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-left: 15px solid #ebeced;
+    border-top: 15px solid #ebeced;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-bottom: 15px solid #ebeced;
+    border-right: 15px solid #ebeced;
   }
 }
