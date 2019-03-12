@@ -1,0 +1,137 @@
+.review {
+  position: relative;
+  z-index: 0;
+  padding-top: 80px;
+  padding-bottom: 135px;
+  background-image: url(../img/images/img-8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(14, 16, 24, 0.85);
+  }
+  
+  .title {
+    position: relative;
+    color: #fff;
+    z-index: 5;
+  }
+}
+
+.review__wrap {
+  position: relative;
+}
+
+.review__slider {
+  z-index: 5;
+  margin-top: 60px;
+}
+
+.review__slide {
+  width: 555px;
+  padding: 25px 30px;
+  padding-bottom: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.review__pagination {
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  .swiper-pagination-bullet {
+    opacity: 1;
+    outline: none;
+    width: 25px;
+    height: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: @blue;
+  }
+}
+
+.review__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review__img-wrap {
+  width: 210px;
+  height: 130px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-left: 10px solid #ebeced;
+    border-top: 10px solid #ebeced;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border-bottom: 10px solid #ebeced;
+    border-right: 10px solid #ebeced;
+  }
+}
+
+.review__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid @blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    display: block;
+  }
+}
+
+.review__person {
+  width: ~"calc(100% - 235px)";
+}
+
+.review__name {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.review__position {
+  margin: 0;
+  font-size: 14px;
+}
+
+.review__company {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
