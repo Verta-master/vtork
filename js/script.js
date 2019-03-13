@@ -8,20 +8,20 @@ $('.menu__btn').click(function() {
 })
 
 //Scroll to top
-$(window).scroll(function(){
-  if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
-    $(".btn-top").fadeIn();
-  } else {
-    $(".btn-top").fadeOut();
-  };
-});
-
-$(".btn-top").click(function () {
-  $("body,html").animate({
-    scrollTop: 0
-  }, 400);
-  return false;
-});
+//$(window).scroll(function(){
+//  if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
+//    $(".btn-top").fadeIn();
+//  } else {
+//    $(".btn-top").fadeOut();
+//  };
+//});
+//
+//$(".btn-top").click(function () {
+//  $("body,html").animate({
+//    scrollTop: 0
+//  }, 400);
+//  return false;
+//});
 
 //Scroll to menu anchor
 $(document).ready(function () {
@@ -60,4 +60,12 @@ function onScroll(event){
       }
   });
 };
+  
+//scroll to arrow anchors
+$('.menu__link').click(function() {
+  event.preventDefault();
+  var id  = $(this).attr('href');
+  var top = $(id).offset().top;
+  $('body, html').animate({scrollTop: top}, 500);
+});
 });
