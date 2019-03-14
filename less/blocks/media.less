@@ -90,6 +90,14 @@
   .news__item {
     margin-right: 0;
   }
+  .contacts__info,
+  .contacts__form {
+    width: 48%;
+    margin-right: 0;
+  }
+  .contacts__wrap {
+    justify-content: space-between;
+  }
 }
 
 //-----------------------------------------------------------------
@@ -207,6 +215,32 @@
   .privod,
   .pneumo {
     background-position: bottom center;
+  }
+  .contacts__wrap {
+    display: block;
+  }
+  .contacts__form,
+  .contacts__info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 460px;
+    max-width: 100%;
+  }
+  .contacts__info {
+    padding-left: 0;
+    margin-bottom: 40px;
+    
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  .map {
+    min-height: 400px;
+    
+    iframe {
+      height: 400px;
+    }
   }
 }
 
@@ -331,5 +365,15 @@
   }
   .news__img {
     height: 180px;
+  }
+  .contacts__link {
+    font-size: 20px;
+    
+    &::before {
+      top: 0;
+    }
+  }
+  .contacts__form {
+    padding: 20px;
   }
 }

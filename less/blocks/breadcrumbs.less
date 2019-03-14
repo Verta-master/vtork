@@ -1,0 +1,21 @@
+.breadcrumbs {
+  font-size: 14px;
+}
+
+a.breadcrumbs__link {
+  margin-right: 5px;
+  
+  &::after {
+    content: "/";
+    margin-left: 7px;
+  }
+  
+  &:hover,
+  &:active {
+    color: @blue;
+    
+    &::after {
+      color: #131620;
+    }
+  }
+}
