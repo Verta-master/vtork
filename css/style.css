@@ -468,6 +468,26 @@ h1,
   padding-bottom: 100px;
   background-color: #f7f8f8;
 }
+.internal--white {
+  background-color: #fff;
+}
+.wrapper__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.wrapper__sidebar {
+  width: 360px;
+}
+.wrapper__content {
+  width: 750px;
+}
 .header {
   position: fixed;
   z-index: 100;
@@ -2001,6 +2021,50 @@ a.breadcrumbs__link:active::after {
   width: 100%;
   height: 588px;
 }
+.filter {
+  width: 100%;
+  padding: 30px;
+  background-color: #f7f8f8;
+}
+.filter__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.filter__form {
+  margin-top: 35px;
+}
+.filter__form .form__check {
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-size: 16px;
+}
+.filter__form .form__check::before {
+  top: 0;
+}
+.filter__form .form__check::after {
+  top: 0;
+}
+.filter__btn {
+  margin-top: 50px;
+}
+.complect__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.complect__list .component__slide {
+  padding: 0;
+  margin-bottom: 30px;
+}
 @media (max-width: 1400px) {
   .gallery__item {
     height: 200px;
@@ -2086,6 +2150,7 @@ a.breadcrumbs__link:active::after {
     margin-left: auto;
     margin-right: auto;
   }
+  .complect__list,
   .news__list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -2102,6 +2167,35 @@ a.breadcrumbs__link:active::after {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .wrapper__columns {
+    display: block;
+  }
+  .wrapper__sidebar,
+  .wrapper__content {
+    width: 100%;
+  }
+  .filter__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .filter__form .form__check {
+    width: 50%;
+  }
+  .filter__title {
+    text-align: center;
+  }
+  .filter__form {
+    margin-top: 20px;
+  }
+  .filter__btn {
+    margin-top: 20px;
+  }
+  .filter {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 1022px) {
@@ -2393,5 +2487,8 @@ a.breadcrumbs__link:active::after {
   }
   .contacts__form {
     padding: 20px;
+  }
+  .filter__form .form__check {
+    width: 100%;
   }
 }
