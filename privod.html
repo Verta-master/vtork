@@ -123,6 +123,8 @@
             </ul>
           </div>
         </div>
+        
+        <!--  Tab 1    -->
         <div class="tabs__field wrapper" id="tabs-1">
           <p>Пневмопривод представляет собой устройство преобразующее энергию, поступающего в него сжатого воздуха в поворот запорного органа (шара или диска) крана или затвора на угол 90°.</p>
           <p>Пневмоприводы V-Tork серии VT D (двойного действия)/S(одностороннего действия с возвратными пружинами) предназначены для установки на четвертьоборотную арматуру – краны шаровые и затворы поворотные дисковые.</p>
@@ -147,7 +149,7 @@
             </div>
           </div>
           
-          <p class="tabs__subtitle">Эскиз привода с наименованием деталей и запасных частей</p>
+          <p class="title-2">Эскиз привода с наименованием деталей и запасных частей</p>
           <div class="tabs__wrap">
             <figure class="tabs__img">
               <img src="img/images/1.png" alt="Эскиз привода">
@@ -184,11 +186,59 @@
             </div>
           </div>
         </div>
+        
+        <!--  Tab 2    -->
         <div class="tabs__field wrapper" id="tabs-2">
-
+          <p class="tabs__subtitle">Скачать техническую документацию:</p>
+          <a href="img/catalog.pdf" download class="download download--file">Каталог продукции V-Tork<span>PDF, 44 Мб</span></a>
+          <a href="img/handbook.pdf" download class="download download--file">Руководство по монтажу, обслуживанию и эксплуатации пневматических приводов VT<span>PDF, 11 Мб</span></a>
+          
+          <section class="certificate certificate--tab">
+            <div class="certificate__wrap">
+              <p class="title-2">Сертификаты</p>
+              <div class="swiper-container certificate__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide certificate__slide">
+                    <a data-fancybox="cert" href="img/images/cert1.jpg">
+                      <img src="img/images/cert1.jpg" alt="Сертификаты">
+                    </a>
+                  </div>
+                  <div class="swiper-slide certificate__slide">
+                    <a data-fancybox="cert" href="img/images/cert2.jpg">
+                      <img src="img/images/cert2.jpg" alt="Сертификаты">
+                    </a>
+                  </div>
+                  <div class="swiper-slide certificate__slide">
+                    <a data-fancybox="cert" href="img/images/cert3.jpg">
+                      <img src="img/images/cert3.jpg" alt="Сертификаты">
+                    </a>
+                  </div>
+                  <div class="swiper-slide certificate__slide">
+                    <a data-fancybox="cert" href="img/images/cert4.jpg">
+                      <img src="img/images/cert4.jpg" alt="Сертификаты">
+                    </a>
+                  </div>
+                  <div class="swiper-slide certificate__slide">
+                    <a data-fancybox="cert" href="img/images/cert5.jpg">
+                      <img src="img/images/cert5.jpg" alt="Сертификаты">
+                    </a>
+                  </div>
+                  <div class="swiper-slide certificate__slide">
+                    <a data-fancybox="cert" href="img/images/cert6.jpg">
+                      <img src="img/images/cert6.jpg" alt="Сертификаты">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev certificate__prev"></div>
+              <div class="swiper-button-next certificate__next"></div>
+            </div>
+          </section>
         </div>
+        
+        <!--  Tab 3    -->
         <div class="tabs__field wrapper" id="tabs-3">
-
+          
         </div>
       </section>
     </div>
@@ -298,12 +348,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
-    <!-- Slider -->
+    <!-- Sliders -->
   <script>
     var mySwiper = new Swiper ('.component__slider', {
       navigation: {
         nextEl: '.component__next',
         prevEl: '.component__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    });
+    
+    var mySwiper = new Swiper ('.certificate__slider', {
+      navigation: {
+        nextEl: '.certificate__next',
+        prevEl: '.certificate__prev',
       },
       simulateTouch: false,
       preventClicks: false,
