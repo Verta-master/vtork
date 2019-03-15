@@ -94,6 +94,23 @@
   &:active {
     text-decoration: underline;
   }
+  
+  &--order {
+    margin-top: 0;
+    padding-left: 55px;
+    color: #0e1018;
+    
+    span {
+      display: block;
+      opacity: 0.5;
+    }
+    
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: 0;
+    }
+  }
 }
 
 .download {
@@ -136,5 +153,41 @@
       height: 40px;
       top: 0;
     }
+  }
+}
+
+.form__wrap {
+  display: flex;
+  justify-content: space-between;
+  
+  .form__input {
+    width: 30%;
+  }
+}
+
+.form__message {
+  display: block;
+  width: 100%;
+  height: 150px;
+  min-height: 155px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid @blue;
+  
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.form--order {
+  padding-top: 15px;
+  
+  .form__btn {
+    margin-left: 0;
+  }
+  .form__comment {
+    text-align: left;
+  }
+  .form__check {
+    line-height: 30px;
   }
 }
