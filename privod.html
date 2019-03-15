@@ -238,7 +238,53 @@
         
         <!--  Tab 3    -->
         <div class="tabs__field wrapper" id="tabs-3">
-          
+          <div class="tabs__pic-wrap">
+            <figure class="tabs__pic">
+              <img src="img/images/order.jpg" alt="Заявка на подбор">
+            </figure>
+            <div class="tabs__comment">
+              <p>Для подбора пневмопривода самой важной и определяющей характеристикой является крутящий момент арматуры Н*м (произведение приложенного усилия на радиус, смотрите схему слева). Значения можно узнать в техническом паспорте запорной арматуры.</p>
+            </div>
+          </div>
+          <div class="tabs__step">
+            <div class="tabs__left">
+              <span>Шаг 1</span>
+              <p>Заполните опросный лист</p>
+            </div>
+            <div class="tabs__info">
+              <a href="img/opros.docx" download class="download download--file">Скачать опросный лист<span>DOC, 21.7 Kб</span></a>
+            </div>
+          </div>
+          <div class="tabs__step">
+            <div class="tabs__left">
+              <span>Шаг 2</span>
+              <p>Прикрепите опросный лист к форме</p>
+            </div>
+            <div class="tabs__info">
+              <input type="file" id="file" class="file-input">
+              <label for="file" class="file-label file-label--order">Прикрепить опросный лист<span>Не более 3 Мб</span></label>
+            </div>
+          </div>
+          <div class="tabs__step">
+            <div class="tabs__left">
+              <span>Шаг 3</span>
+              <p>Заполните форму и отправьте ее нам</p>
+            </div>
+            <div class="tabs__info">
+              <form action="#" class="form form--order">
+                <div class="form__wrap">
+                  <input type="text" class="form__input" placeholder="Имя">
+                  <input type="tel" class="form__input" placeholder="Телефон">
+                  <input type="email" class="form__input" placeholder="E-mail">
+                </div>
+                <textarea class="form__message" placeholder="Сообщение"></textarea>
+                <input type="checkbox" id="check" class="form__checklist" checked>
+                <label for="check" class="form__check">Я не робот</label>
+                <button type="submit" class="btn form__btn">Отправить</button>
+                <p class="form__comment">Отправляя форму, я соглашаюсь с <a href="#">правилами конфиденциальности</a></p>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </div>

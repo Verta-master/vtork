@@ -1101,6 +1101,20 @@ h1,
 .file-label:active {
   text-decoration: underline;
 }
+.file-label--order {
+  margin-top: 0;
+  padding-left: 55px;
+  color: #0e1018;
+}
+.file-label--order span {
+  display: block;
+  opacity: 0.5;
+}
+.file-label--order::before {
+  width: 40px;
+  height: 40px;
+  top: 0;
+}
 .download {
   display: block;
   position: relative;
@@ -1137,6 +1151,46 @@ h1,
   width: 40px;
   height: 40px;
   top: 0;
+}
+.form__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form__wrap .form__input {
+  width: 30%;
+}
+.form__message {
+  display: block;
+  width: 100%;
+  height: 150px;
+  min-height: 155px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #00a0ea;
+}
+.form__message::-webkit-input-placeholder {
+  opacity: 1;
+}
+.form__message::-ms-input-placeholder {
+  opacity: 1;
+}
+.form__message::placeholder {
+  opacity: 1;
+}
+.form--order {
+  padding-top: 15px;
+}
+.form--order .form__btn {
+  margin-left: 0;
+}
+.form--order .form__comment {
+  text-align: left;
+}
+.form--order .form__check {
+  line-height: 30px;
 }
 .company {
   padding-top: 65px;
@@ -2236,6 +2290,57 @@ a.breadcrumbs__link:active::after {
 }
 .tabs__field .list-ball li {
   margin-bottom: 10px;
+}
+.tabs__pic-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 30px;
+}
+.tabs__pic {
+  width: 360px;
+  text-align: center;
+}
+.tabs__pic img {
+  width: 100%;
+  height: auto;
+}
+.tabs__step {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.tabs__left {
+  width: 360px;
+}
+.tabs__left span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  opacity: 0.2;
+}
+.tabs__left p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.tabs__comment,
+.tabs__info {
+  width: calc(100% - 390px);
+  padding-top: 40px;
 }
 @media (max-width: 1400px) {
   .gallery__item {
